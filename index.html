@@ -368,7 +368,7 @@
   function updateHistoryUI(){
     const list=document.getElementById('historyList');
     if(history.length===0){
-      list.innerHTML='<div class="history-empty">Aucun calcul enregistré</div>';return;
+      list.innerHTML='<div class="history-empty">Empty</div>';return;
     }
     list.innerHTML=history.map((h,i)=>`
       <div class="history-item" onclick="recallHistory(${i})">
